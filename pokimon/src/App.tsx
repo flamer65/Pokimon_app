@@ -10,10 +10,7 @@ export default function App() {
     const navigate = useNavigate();
     return (
         <>
-            <div className="max-w-7xl mx-auto mt-2 inset-0 h-full w-full z-0 fixed">
-                <div className="absolute inset-y-0 left-0 h-full w-px bg-linear-to-b from-neutral-300/50 via-neutral-300 to-transparent pointer-events-none z-0" />
-                <div className="absolute inset-y-0 right-0 h-full w-px bg-linear-to-b from-neutral-300/50 via-neutral-300 to-transparentd pointer-events-none z-0" />
-            </div>
+        
             <Cointainer>
                 <Routes>
                     <Route

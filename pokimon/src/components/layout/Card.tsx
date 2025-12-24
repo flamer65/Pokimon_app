@@ -6,7 +6,7 @@ type CardDetail = {
 
 export default function Card({ details, imageUrl }: { details: CardDetail[], imageUrl: string }) {
     return (
-        <div className="w-[320px] h-[400px]  flex flex-col max-md:justify-center gap-2 p-2 rounded-md border-2 border-neutral-700">
+        <div className="w-[320px] h-[400px]  flex flex-col max-md:justify-center gap-2 p-2 rounded-md border-2 border-neutral-700 hover:shadow-[8px_8px_25px_rgba(163,163,163,0.4)]">
             <div className="w-full h-[220px] bg-neutral-900  rounded-md"><img src={imageUrl} alt="" className="object-fill w-full h-full" /></div>
             {details.map((detail) => (
                 <CardComponent key={detail.id} category={detail.category} value={detail.value} />

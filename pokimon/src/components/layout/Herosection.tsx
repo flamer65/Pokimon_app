@@ -26,7 +26,7 @@ export default function Herosection() {
 
   const cardsData = usePokemonStore((state) => state.cardsData);
   return (
-    <div className="mt-4 min-w-full p-3 flex flex-wrap justify-center gap-8  xl:justify-around items-center mb-4">
+    <div className=" relative top-5 max-h-160 overflow-scroll mt-4 min-w-full p-3 flex flex-wrap justify-center gap-8  xl:justify-around items-center mb-4 border-t border-amber-50 ">
         {cardsData.length === 0 && (
             <div className="text-white text-center mt-20">
                 Loading...

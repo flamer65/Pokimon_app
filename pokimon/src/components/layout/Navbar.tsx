@@ -1,7 +1,7 @@
 import Button from "./Button";
 export default function Navbar({navigate}: {navigate: (path: string) => void}) {
   return (
-    <header className="flex top-0 min-w-full mb-3 p-3 justify-between items-center bg-neutral-900  tracking-tight rounded-md">
+    <header className=" bottom-0 flex top-0 min-w-full max-h-16  mb-3 p-3 justify-between items-center bg-neutral-900  tracking-tight rounded-md ">
         <div><img src="pokeapi_256.png" alt="" className="w-18" /></div>
         <nav className="flex gap-2 items-center justify-center">
           <NavbarLink link="">Home</NavbarLink>
